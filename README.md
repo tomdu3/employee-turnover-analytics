@@ -1,5 +1,7 @@
 # Employee Turnover Analytics
 
+![Screenshot of the ROC Diagram](./docs/screenshot.png)
+
 This project aims to develop machine learning models and techniques to analyze employee turnover at Portobello Tech, an app innovator company, using Jupyter Notebooks. The primary objectives are:
 
 1. **Data Quality Checks**: Perform data quality checks by identifying and handling missing values, if any.
@@ -21,18 +23,27 @@ This project aims to develop machine learning models and techniques to analyze e
 ## Installation
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/tomdu3/employee-turnover-analytics.git
    ```
+2. Install and activate python environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
+   or if using conda
+   
+   ```sh
+   conda create -n venv python=3.12
+   conda activate venv
+   ```
 
-2. Install the required Python packages:
+   to deactivate the environment use `deactivate` or `conda deactivate`
+
+
+3. Install the required Python packages:
    ```
    pip install -r requirements.txt
-   ```
-
-3. Install Jupyter Notebook:
-   ```
-   pip install jupyter
    ```
 
 ## Data
@@ -47,13 +58,7 @@ The project uses employee data provided by Portobello Tech, which includes infor
    ```
 
 2. Open the relevant Jupyter Notebook files in the project directory:
-   - `data_quality_checks.ipynb`
-   - `eda.ipynb`
-   - `clustering.ipynb`
-   - `smote.ipynb`
-   - `model_training.ipynb`
-   - `best_model.ipynb`
-
+   - `employee_turnover.ipynb`
 3. Follow the instructions and code cells in each Notebook to perform the respective tasks.
 
 ## Contributing
